@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Askar Bavgashev | jQuery Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="profile">
+    <h1 id="welcome-title">Welcome to My Portfolio</h1>
+    <h2 id="headline" class="headline">Askar Bavgashev — Software Engineer</h2>
+    <p class="intro">Hi! I'm Askar from group SE-2540. I study Software Engineering and enjoy building web apps. This page is my jQuery playground.</p>
+    <div class="btn-row">
+      <button id="btn-light">Light Theme</button>
+      <button id="btn-dark">Dark Theme</button>
+      <button id="btn-headline">Change Headline</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="card" id="about">
+      <h2>About Me</h2>
+      <p>I am a Software Engineering student interested in front-end development, clean code and learning new technologies.</p>
+      <p id="status" class="status">Currently learning jQuery!</p>
+      <ul id="fun-facts">
+        <li>I enjoy solving programming problems.</li>
+        <li>My goal is to become a full-stack developer.</li>
+        <li>I like exploring new tools and frameworks.</li>
+      </ul>
+      <div class="btn-row">
+        <button id="btn-hide">Hide</button>
+        <button id="btn-show">Show</button>
+        <button id="btn-toggle">Toggle</button>
+      </div>
+    </section>
+
+    <section class="card" id="gallery-section">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="images/photo1.png" alt="Hobby photo" class="gallery-img">
+        <img src="images/photo2.png" alt="Project photo" class="gallery-img">
+      </div>
+      <div class="btn-row">
+        <button id="btn-fadein">Fade In</button>
+        <button id="btn-fadeout">Fade Out</button>
+        <button id="btn-fadetoggle">Fade Toggle</button>
+      </div>
+    </section>
+
+    <section class="card" id="favorites">
+      <h2>My Favorites</h2>
+      <h3 class="accordion-head">My Favorite Music</h3>
+      <div class="panel"><p>Pop music and Hip hop.</p></div>
+      <h3 class="accordion-head">My Favorite Movie</h3>
+      <div class="panel"><p>Fight club - it is generational and deep.</p></div>
+      <h3 class="accordion-head">My Favorite Subject</h3>
+      <div class="panel"><p>Operation Systems - i like using linux.</p></div>
+      <div class="btn-row">
+        <button id="btn-slideup">Slide Up All</button>
+        <button id="btn-slidedown">Slide Down All</button>
+      </div>
+    </section>
+
+    <section class="card" id="skills-section">
+      <h2>Technical Skills</h2>
+      <ul id="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+      </ul>
+      <input type="text" id="skill-input" placeholder="Enter a new skill">
+      <div class="btn-row">
+        <button id="btn-add">Add Skill</button>
+        <button id="btn-prepend">Prepend Skill</button>
+        <button id="btn-remove">Remove Skill</button>
+      </div>
+      <p id="skill-msg" class="msg"></p>
+    </section>
+
+    <section class="card" id="bars-section">
+      <h2>Skill Levels</h2>
+      <div class="skill-row"><span>HTML</span><div class="bar-bg"><div class="bar" data-level="90"></div></div></div>
+      <div class="skill-row"><span>CSS</span><div class="bar-bg"><div class="bar" data-level="80"></div></div></div>
+      <div class="skill-row"><span>JavaScript</span><div class="bar-bg"><div class="bar" data-level="70"></div></div></div>
+      <div class="skill-row"><span>jQuery</span><div class="bar-bg"><div class="bar" data-level="55"></div></div></div>
+      <div class="btn-row"><button id="btn-animate">Animate My Skills</button></div>
+    </section>
+
+    <section class="card" id="links">
+      <h2>My Links</h2>
+      <p><a id="social-link" href="https://github.com/ZuckerbergWannabe" target="_blank">My GitHub</a></p>
+      <p>Current destination: <code id="link-url">https://github.com/ZuckerbergWannabe</code></p>
+      <div class="btn-row"><button id="btn-link">Change Link to LinkedIn</button></div>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>Contact Form</h2>
+      <form id="contact-form" onsubmit="return false;">
+        <input type="text" id="name-input" placeholder="Your name">
+        <input type="email" id="email-input" placeholder="Your email">
+      </form>
+      <p>Name: <strong id="live-name"></strong></p>
+      <p>Email: <strong id="live-email"></strong></p>
+    </section>
+  </main>
+
+  <footer><p>Askar Bavgashev · SE-2540 · Assignment 6</p></footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

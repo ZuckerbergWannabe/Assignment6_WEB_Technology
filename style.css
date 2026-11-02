@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; color: #222; line-height: 1.5; }
+header { background: #2c3e50; color: #fff; text-align: center; padding: 40px 20px; }
+.headline { color: #f1c40f; }
+main { max-width: 800px; margin: 20px auto; padding: 0 15px; }
+.card { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,.15); }
+.btn-row { margin: 12px 0; }
+button { background: #3498db; color: #fff; border: none; padding: 8px 14px; margin: 3px; border-radius: 5px; cursor: pointer; }
+button:hover { background: #217dbb; }
+input[type=text], input[type=email] { padding: 8px; margin: 4px 0; width: 100%; max-width: 320px; display: block; }
+.status { font-weight: bold; color: #27ae60; }
+.gallery { display: flex; gap: 12px; flex-wrap: wrap; }
+.gallery-img { width: 48%; min-width: 200px; border-radius: 6px; }
+.accordion-head { background: #ecf0f1; padding: 10px; margin: 8px 0 0; cursor: pointer; border-radius: 5px; }
+.panel { padding: 10px; border: 1px solid #ecf0f1; display: none; }
+.msg { color: #c0392b; min-height: 1.2em; }
+.skill-row { display: flex; align-items: center; margin: 8px 0; }
+.skill-row span { width: 100px; }
+.bar-bg { flex: 1; background: #ddd; border-radius: 6px; height: 20px; overflow: hidden; }
+.bar { width: 0; height: 100%; background: #27ae60; }
+footer { text-align: center; padding: 20px; color: #777; }
